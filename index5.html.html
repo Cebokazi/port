@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://www.google.com/recaptcha/api.js" async defer></script>
+    <script src="https://www.google.com/recaptcha/api.js?onload=onloadCallback&render=explicit"
+    async defer>
+</script>
+
+
+<style>
+
+body {font-family: Arial, Helvetica, sans-serif;}
+* {box-sizing: border-box;}
+
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: black;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: black;
+}
+
+.container {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+body {
+            font-family: 'Lato', sans-serif;
+            background: url("colors.jpg");
+            background-size: 2000px;
+            }
+
+            .overlay {
+            height: 0%;
+            width: 100%;
+            position: fixed;
+            z-index: 1;
+            top: 0;
+            left: 0;
+            background-color: rgb(0,0,0);
+            background-color: rgba(0,0,0, 0.9);
+            overflow-y: hidden;
+            transition: 0.5s;
+            }
+
+            .overlay-content {
+            position: relative;
+            top: 25%;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            }
+
+            .overlay a {
+            padding: 8px;
+            text-decoration: none;
+            font-size: 36px;
+            color: #818181;
+            display: block;
+            transition: 0.3s;
+            }
+
+            .overlay a:hover, .overlay a:focus {
+            color: #f1f1f1;
+            }
+
+            .overlay .closebtn {
+            position: absolute;
+            top: 20px;
+            right: 45px;
+            font-size: 60px;
+            }
+
+            @media screen and (max-height: 450px) {
+            .overlay {overflow-y: auto;}
+            .overlay a {font-size: 20px}
+            .overlay .closebtn {
+            font-size: 40px;
+            top: 15px;
+            right: 35px;
+            }
+            }
+
+            .button {
+                        background-color: white;
+                        border: none;
+                        color: black;
+                        padding: 15px 32px;
+                        text-align: center;
+                        text-decoration: none;
+                        display: inline-block;
+                        font-size: 20px;
+                        margin: 4px 2px;
+                        cursor: pointer;
+                        font-family: fantasy;
+                    }
+                    .button {width: 300px;}       
+
+            h1 {
+                text-align: center;
+                font-family: fantasy;
+                text-decoration: underline;
+            }
+
+            div.a {
+                text-align: center;
+            }
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+<a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+<div class="overlay-content">
+    <a href="front.html"><i class="fa fa-home">Home</i></a>
+    <a href="new.about.html"><i class="fa fa-info-circle">About</i></a>
+    <a href="new.tasks.html"></i><i class="fa fa-tasks">Tasks</i></a>
+    <a href="new.skills.html"><i class="fa fa-code">Skills</i></a>
+    <a href="new.certificates.html"><i class="fa fa-certificate">Certificates</i></a>
+    <a href="contact.me.html"><i class="fa fa-phone">Contact</i></a>
+</div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<h1><p style="color: black">Connect With Me</p></h1>
+<br>
+
+<div class="container">
+    <form action="/action_page.php">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+  
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+  
+      <div class="g-recaptchabrochure_form_captcha" data-sitekey="6LebevMZAAAAAA5liqbTueORSzUPoFxbHvAufOcF"></div>
+  
+      <form action="?" method="POST">
+          <div class="g-recaptcha" data-sitekey="your_site_key"></div>
+          <br/>
+          <input type="submit" value="Submit">
+        </form>
+        <br><br><br><br>
+
+        <div class="a">
+            <a href="https://www.facebook.com/profile.php?id=100008501322165" class="fa fa-facebook" style="font-size:20px;color: rgba(97, 134, 235, 0.952)"></a>
+
+            <a href="https://myaccount.google.com/?pli=1" class="fa fa-google" style="font-size:20px;color: red"></a>
+
+            <a href="https://github.com/Cebokazi" class="fa fa-github" style="font-size:20px;color: blueviolet"></a>
+
+            <a href="https://www.linkedin.com/in/cebokazi-makasi-37925a1b7" class="fa fa-linkedin" style="font-size:20px;color: rgb(76, 159, 253)"></a>
+
+            <a href="https://www.intsagram.com/ngcwelemakasi/" class="fa fa-instagram" style="font-size:20px;color: rgb(241, 127, 98)"></a>
+
+            <a href="https://www.snapchat.com/cebokazimakasi20/" class="fa fa-snapchat-ghost" style="font-size:20px;color: yellow"></a>
+
+            <a href="https://wa.link/kq0ryt" class="fa fa-whatsapp" style="font-size:20px;color: green"></a>
+
+            <a href="tel:+271-268-8511" class="fa fa-phone" style="font-size:20px;color: rgb(32, 163, 157)"></a>
+        </div>
+
+
+
+<script type="text/javascript">
+            var onloadCallback = function() {
+              alert("grecaptcha is ready!");
+            };
+function openNav() {
+document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+document.getElementById("myNav").style.height = "0%";
+}
+
+
+</script>
+
+</body>
+</html>

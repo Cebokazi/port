@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<style>
+body {
+  font-family: 'Lato', sans-serif;
+  background: url("colors.jpg") no-repeat;
+  background-size: 2000px;
+}
+
+.overlay {
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color:  rgb(0,0,0);
+  background-color: rgba(0,0,0, 0.9);
+  overflow-y: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 450px) {
+  .overlay {overflow-y: auto;}
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}
+
+h1 {
+    text-align: center;
+    font-family: fantasy;
+    text-decoration: underline;
+}
+
+div.a {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    font-size: x-large;
+}
+
+div.b {
+    text-align: center;
+}
+
+</style>
+</head>
+<body>
+
+<div id="myNav" class="overlay">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+  <div class="overlay-content">
+    <a href="front.html"><i class="fa fa-home">Home</i></a>
+    <a href="new.about.html"><i class="fa fa-info-circle">About</i></a>
+    <a href="new.tasks.html"></i><i class="fa fa-tasks">Tasks</i></a>
+    <a href="new.skills.html"><i class="fa fa-code">Skills</i></a>
+    <a href="new.certificates.html"><i class="fa fa-certificate">Certificates</i></a>
+    <a href="connect.html"><i class="fa fa-phone">Contact</i></a>
+  </div>
+</div>
+
+<span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; </span>
+
+<h1><p style="color: black">About</p></h1>
+
+<div class="a">
+    <p>Cebokazi Makasi...</p>
+    <p>A Web Developer who is currently leading her way to becoming a Mobile App Developer.</p>
+    <br>
+</div>
+
+    <div class="b">
+        <img src="office.jpg" height="300" width="400">
+        </div>
+        <br>
+
+<div class="a">
+    <p>When I joined the CodeTelligent classes I knew nothing about coding or anything with web developing. I just wanted to be in class since I was sitting at home doing nothing. At first coding looked difficult and complicated but as I completed the given tasks I fell in love with it, though sometimes it can be difficult. I have only been attending for three months yet already I have done about seven projects (currently busy with my eighth one). The world is probably going to the Fourth Industrial Revolution and technology is what's leading currently so why not start motivating yourself and become your own robot?</p>
+    <p>My ultimate goal is to become a more schooled developer where I develop more than just websites and apps. See you on the other side. Happy Coding!</p>
+</div>
+
+<script>
+function openNav() {
+  document.getElementById("myNav").style.height = "100%";
+}
+
+function closeNav() {
+  document.getElementById("myNav").style.height = "0%";
+}
+</script>
+     
+</body>
+</html>
